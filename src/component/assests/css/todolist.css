@@ -1,0 +1,156 @@
+.todolist-container{
+    width: 100%;
+    margin: 2px auto;
+    background-color: #9d1799;
+    min-height: 100vh;
+    padding: 30px;
+}
+.todolist-container > h2{
+    text-align: center;
+    text-transform: uppercase;
+    background-color: #000;
+    width: 70%;
+    margin: 0px auto;
+    padding: 10px;
+    color: #fff;
+    border-radius: 20px;
+}
+.todolist {
+    width: 70%;
+    background-color: #000;
+    margin: 2rem auto;
+    color: #fff;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5rem;
+    border-radius: 20px;
+    transition: all .3s ease-in-out;
+    border-radius: 48px;
+background: linear-gradient(315deg, #151515, #191919);
+box-shadow:  -5px -5px 10px #121212,
+             5px 5px 10px #1c1c1c;
+    
+}
+
+.todolist:hover{
+    width: 80%;
+    cursor: pointer;
+
+}
+/* .todoitems {
+    display: flex;
+    align-items: center;
+    background-color: red;
+    justify-content: center;
+  
+}
+*/
+.check_container {
+    position: relative;
+  }
+  
+  .checkbox {
+    position: relative;
+    top: 1px;
+    width: 50px;
+    height: 50px;
+    border: 2px solid #9d1799;
+    border-radius: 50px;
+    cursor: pointer;
+    display: block;
+    transition: all 0.3s linear;
+  }
+  
+  .checkbox::after {
+    content: "";
+    position: absolute;
+    top: 25%;
+    left: 20%;
+    width: 15px;
+    height: 25px;
+    opacity: 0;
+    transform: rotate(45deg) scale(0) translate(-50%, -50%);
+    border-right: 4px solid #ffffff;
+    border-bottom: 4px solid #ffffff;
+    transition: all 0.3s linear;
+  }
+  
+  #checkbox:checked ~ .checkbox::after {
+    opacity: 1 !important;
+    transform: rotate(50deg) scale(1) translate(20%, -25%) !important;
+  }
+  
+  #checkbox:checked ~ .checkbox {
+    background: #9d1799;
+    border: none;
+  }
+  
+  .hidden {
+    display: none !important;
+  }
+  
+  .todoitems{
+    display: flex;
+    
+  }
+
+.todotext{
+    margin-left: 10px;
+  }
+
+
+.todoitems > p:first-child{
+    font-size: 30px;
+    color: red;
+}
+.action-btn{
+    margin-right: 2rem;
+}
+button:nth-last-child(1){
+    background-color: red;
+    padding: 15px;
+    color: #fff;
+    margin-left: 10px;
+    border-radius: 10px;
+
+}
+button:first-child{
+    background-color: rgb(137, 24, 115);
+    color: #fff;
+    padding: 15px;
+    border-radius: 10px;
+
+}
+
+@media screen and (max-width:700px){
+    .todolist-container > h2{
+        width: 90%;
+    }
+    .todolist {
+        width: 90%;
+        padding: 1rem;
+    }
+    .todoitem > h1{
+        font-size: 30px;
+    }
+    .action-btn{
+        margin-right: 10px;
+        /* background-color: green; */
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+    }
+    #editt, #del{
+        padding: 5px;
+        border-style: none;
+        margin-bottom: 5px;
+    }
+    #del{
+        padding: 5px;
+        margin-top: 10px;
+    }
+
+    
+}

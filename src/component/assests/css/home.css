@@ -1,0 +1,93 @@
+.home-container{
+    height: 100vh;
+    background-color: #9d1799;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-top: 5rem;
+    flex-wrap: wrap;
+
+
+}
+.hero-block1{
+    height: 550px;
+    width: 70%;
+    background-color: #000;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 20px;
+    
+
+}
+.hero-block1 > div {
+    width: 500px;
+    padding: 20px;
+    background-color: #710c6e;
+    color: #fff;
+    /* box-shadow: 5px 5px 5px 20px #817e7e; */
+    
+}
+.hero-title{
+    border-radius: 50px;
+background: linear-gradient(145deg, #3a3a3a, #444444);
+box-shadow:  20px 20px 60px #363636,
+             -20px -20px 60px #4a4a4a;
+
+}
+.hero-block1 > div > h1{
+    font-size: 50px;
+    padding: 20px;
+    text-transform: uppercase;
+}
+.hero-block1> div>p{
+    font-style: italic;
+    padding: 10px;
+}
+.hero-nav{
+    margin-top: 1rem;
+    border-radius: 50px;
+background: linear-gradient(145deg, #3a3a3a, #444444);
+box-shadow:  20px 20px 60px #363636,
+             -20px -20px 60px #4a4a4a;
+}
+.todolink {
+    padding: 10px;
+    text-decoration: none;
+    background-color: #000;
+    margin: 10px;
+    border-radius: 20px;
+    color: #fff;
+    letter-spacing: 10px;
+}
+.todolink:hover{
+    color: #710c6e;
+}
+
+@media screen and (max-width: 700px) {
+    .home-container{
+        height: 120vh;
+        width: 100%;
+        padding-top: 5rem;
+    }
+    .hero-block1{
+        width: 90%;
+    }
+    .hero-block1 > div{
+        width: 250px;
+        box-shadow: 3px 3px 3px 15px #817e7e;
+        
+        
+    }
+    .hero-block1 > div > h1{
+        font-size: 30px;
+    }
+    .todolink{
+        margin: 2px;
+        padding: 2px;
+        letter-spacing: 3px;
+    }
+}
+
